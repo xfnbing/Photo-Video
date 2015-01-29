@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#000000" >
+
+        <FrameLayout
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" >
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/title_menu"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#77000000"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true" 
+                android:textColor="#ffffff"  
+                android:text="X"
+                android:layout_marginLeft="8dp"/>
+
+            <!-- <Button -->
+            <!-- android:id="@+id/buttonNext" -->
+            <!-- android:layout_width="30dp" -->
+            <!-- android:layout_height="30dp" -->
+            <!-- android:layout_alignParentRight="true" -->
+            <!-- android:layout_alignParentTop="true" -->
+            <!-- android:background="@drawable/navigation_next" -->
+            <!-- android:textColor="#ffffff" /> -->
+
+            <Button
+                android:id="@+id/btnChangeCamera"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"   
+                android:textColor="#ffffff"  
+                android:text="C"/>
+
+            <Button
+                android:id="@+id/btnLight"
+                android:layout_width="32dp"
+                android:layout_height="32dp" 
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"  
+                android:layout_toLeftOf="@+id/btnChangeCamera"  
+                android:text="L" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="#70000000"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/rlCamere"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"  >
+
+          
+
+            <Button
+                android:id="@+id/btnToVideo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp" 
+                android:text="视频" />
+
+            <Button
+                android:id="@+id/btnPicture"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"  
+                android:text="@string/begain" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone">
+
+            <!--  -->
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="00:00:00"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnTakeVideo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true" 
+                android:text="@string/begain"/>
+
+            <Button
+                android:id="@+id/btnToCamere"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"  
+                android:text="拍照" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
